@@ -1,0 +1,55 @@
+<% include partials/__header %>
+
+
+<div class="container">
+
+	<div class="row mt-5">
+		<div class="col-md-12">
+		
+		 <table class="table-bordered table-hover">
+		 <thead>
+		 	<tr>
+		 	<th style="width:180px;">Nome</th>
+            <th>Preco Compra</th>
+            <th>Preco Venda</th>
+            <th>Quantidade</th>
+            <th style="width:120px;">Fornecedor</th>
+            <th style="width:120px;">Data Adquirido</th>
+            <th style="width:60px;">Estatus</th>
+		 	</tr>
+
+		 </thead>
+
+		 <tbody>
+		 	<% if (data ) {  %>
+		 		<% for  (var i = 0; i < data.length; i++) { %>
+
+		 		<tr> 
+		 		
+		 			<td> <%= data[i].nomematerial %>  </td>
+		 			<td> <%= data[i].precocompra %>  </td>
+		 			<td> <%= data[i].precovenda %>  </td>
+		 			<td> <%= data[i].quantidade %>  </td>
+		 			<td> <%= data[i].nomefornecedor %>  </td>
+		 			<td> <%= data[i].dataadquirido %>  </td>
+		 			<td> 
+		 				 <%= 
+		 				 		data[i].estatus;
+		 				 %> Confirmado
+		 			</td>
+
+		 		</tr>
+		 	<% } %>
+		 	<% } %>
+		 </tbody>
+
+
+		 </table>
+		
+		</div> 
+	</div>
+
+</div>
+
+
+<% include partials/__footer %>

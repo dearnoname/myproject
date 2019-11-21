@@ -1,0 +1,6 @@
+iniciar servicios
+
+* abrir cmd 
+* ejecutar el comando para ser direccionado a la carpeta origen del proyecto
+"cd C:\xampp\htdocs\mvc-node " o la carpeta de destino utlizada
+* luego usar el comando de inicio del servidor "npm run dev"
